@@ -1,0 +1,19 @@
+sudo apt update
+sudo apt -y upgrade
+sudo apt install terminator
+
+한글설정 이후 배터리 전원 5분 -> never변경
+
+Anaconda 자꾸까먹어서추가
+
+gedit ~/.bashrc
+
+export PATH=~/anaconda3/bin:~/anaconda3/condabin:$PATH
+
+conda init
+conda config --set auto_activate_base False
+
+
+
+git clone https://github.com/team-aiDAM/kme_service
+git clone https://github.com/team-aiDAM/kme_performance
