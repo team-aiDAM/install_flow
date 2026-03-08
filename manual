@@ -17,3 +17,32 @@ conda config --set auto_activate_base False
 
 git clone https://github.com/team-aiDAM/kme_service
 git clone https://github.com/team-aiDAM/kme_performance
+
+
+
+
+
+
+
+
+----------- AnyDesk접속시 지켜야할 사항------------
+ssh로 해당 공간 접속후
+sudo pkill -f anydesk
+
+
+다시 보고싶으면 
+ssh로 다시접속후
+sudo systemctl enable --now anydesk
+
+다보고난 후엔
+sudo pkill -f anydesk
+
+
+
+
+그리고, 만약 Wayland관련 설정 문제가 생긴경우 (초기에)
+
+sudo gedit /etc/gdm3/custom.conf
+
+로 들어가서 WaylandEnable=False 주석풀면됨
+
