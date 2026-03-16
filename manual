@@ -46,3 +46,10 @@ sudo gedit /etc/gdm3/custom.conf
 
 로 들어가서 WaylandEnable=False 주석풀면됨
 
+
+
+
+# Anydesk 현재 자신의 아이디 아는법
+anydesk --get-id
+
+
